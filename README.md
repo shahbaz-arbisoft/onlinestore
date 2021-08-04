@@ -1,6 +1,7 @@
 # onlinestore
 
 - Make sure you have already installed python3.6.9+
+- Clone the project by this URL `https://github.com/shbz44/onlinestore/`
 - Go to the project directory
 - Acticvate virtual environment by running this command source todovenv/bin/activate
 - Now install dependencies, for this run this command pip3 install -r requirements.txt
