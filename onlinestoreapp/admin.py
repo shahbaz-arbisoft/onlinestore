@@ -22,13 +22,12 @@ class ProductImageInline(admin.TabularInline):
 
 class ProductAdmin(admin.ModelAdmin):
     inlines = [ProductImageInline, ]
-    exclude = ('categories',)
     list_display = ['title', 'description', 'amount', 'price', 'active', 'image', 'get_categories']
     list_filter = ('active', 'price')
     filter_horizontal = ('categories',)
     search_fields = ['id', 'title']
     fields = ['title', 'description', 'amount', 'price', 'active', 'categories']
-    ordering = ('amount', 'price',)
+    ordering = ('price',)
 
     def get_search_results(self, request, queryset, search_term):
         queryset, use_distinct = super().get_search_results(request, queryset, search_term)

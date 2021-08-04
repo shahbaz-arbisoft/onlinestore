@@ -68,9 +68,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'onlinestore.wsgi.application'
 
-DB_NAME = os.getenv('DB_NAME', 'helloworld')
-DB_USER = os.getenv('DB_USER', 'shbz')
-DB_PASSWORD = os.getenv('DB_PASSWORD', 'Pass1234!!')
+DB_NAME = os.getenv('DB_NAME', 'dbonlinestore')
+DB_USER = os.getenv('DB_USER', 'postgres')
+DB_PASSWORD = os.getenv('DB_PASSWORD', 'frt_')
 DB_HOST = os.getenv('DB_HOST', 'localhost')
 DB_PORT = os.getenv('DB_PORT', 5432)
 
