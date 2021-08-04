@@ -72,6 +72,6 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
 
     def get_parents(self):
-        return ", ".join([str(pts.title) for pts in self.parent.all().exclude(id=self.id)])
+        return ", ".join([str(pts.title) for pts in self.sub_categories.all().exclude(id=self.id)])
 
-    get_parents.short_description = 'Parent Categories'
+    get_parents.short_description = 'Sub-Categories'
